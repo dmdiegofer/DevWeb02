@@ -1,0 +1,14 @@
+:root{
+    /* colors */
+    --yelow: rgba(218, 195, 145, 1);
+    --pink: rgba(231, 208, 216, 1);
+    --deep_pink: rgba(229, 144, 165, 1);
+    --blue: rgba(80, 117, 146, 1);
+    --purple: rgba(117, 99, 139, 1);
+
+    /* font */
+    --font: "Josefin Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+}
