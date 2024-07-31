@@ -12,3 +12,72 @@
             font-weight: weight;
             font-style: normal;
 }
+/* GLOBALES */
+html{
+    font-family: var(--font);
+    font-size: 62.5%; /* STANDARD TO REM */
+    box-sizing: border-box;/* HACK BOXMODEL */
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    background-color: var(--purple);
+    font-size: 1.6rem; 
+    line-height: 1.2; /* innerline in the paragraph */ 
+}
+p {
+    font-size: 1.8rem;
+    color: var(--pink);
+}
+a {
+    text-decoration: none; /* link line off */
+}
+img {
+    max-width: 100%;
+}
+.container{
+    max-width: 120rem;
+    margin: 0 auto; /* center */
+}
+h1, h2, h3 {
+    text-align: center;
+    color: var(--deep_pink);
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3.2rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: center;
+}
+.header__logo {
+    margin: 3rem 0;
+
+}
+/* NAVBAR */
+.navbar {
+    background-color: var(--blue);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.navbar__link {
+    color: var(--pink);
+    text-transform: capitalize;
+    display: flex;
+}
+.navbar__link--active,
+.navbar__link:hover {
+    color: var(--yelow);
+    font-weight: bold;
+    text-decoration:underline;
+}
