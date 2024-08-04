@@ -26,6 +26,9 @@ body{
     font-size: 1.6rem;
     line-height: 1.2; /* innerline in the paragraph */
 }
+main {
+    width: 90%;
+}
 p {
     font-size: 1.8rem;
     color: var(--pink);
@@ -153,12 +156,44 @@ h3 {
 /* US */
 .us {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
+    grid-template-rows: repeat(2, auto);
+    justify-content: center;
+}
+@media (min-width: 768px) {
+    .us {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
 }
 .us__content {
-
+    text-align: justify;
 }
 .us__image {
-
+    grid-row: 1 / 2;
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .us__image {
+        grid-column: 2 / 3;
+    }
+}
+/* BLOCKS */
+.blocks {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 2rem;
+}
+@media (min-width: 768px) {
+    .blocks {
+        grid-template-columns: repeat(4 , 1fr);
+        
+}
+.block {
+    text-align:center;
+}
+.bock__image {
+    width: 100%;
+}
+.block__title{
+    margin: 0;
 }
