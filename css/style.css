@@ -12,7 +12,7 @@
             font-weight: weight;
             font-style: normal;
 }
-/* GLOBALES */
+/* GLOBALS */
 html{
     font-family: var(--font);
     font-size: 62.5%; /* STANDARD TO REM */
@@ -96,7 +96,7 @@ h3 {
 }
 /* GRID */
 .grid {
-    background-color: rgba(229, 144, 165, .6);;
+    background-color: rgba(229, 144, 165, .8);
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
